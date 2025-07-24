@@ -15,10 +15,15 @@
         "wdth" 100;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+}
+
 .black-bold {
     font-weight: bold;
     color: black;
 }
+
 .white-bold {
     font-weight: bold;
     color: white;
@@ -27,6 +32,7 @@
 .orange-bold {
     font-weight: bold;
     color: #E95A08;
+
 }
 
 .gray {
@@ -38,6 +44,7 @@
     background: #E95A08;
     padding: 15px 70px;
     border: none;
+    font-family: "Inter", sans-serif;
 }
 
 /* header start */
@@ -81,13 +88,12 @@ header {
 
 .fh3 {
     font-size: 65px;
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif";
 }
 
 .p1 {
 
     font-style: 22px;
-    font-family: "Inter", sans-serif;
 }
 
 /* banner responsive */
@@ -126,6 +132,7 @@ header {
 
 .sh3 {
     font-size: 50px;
+    font-family: "Noto Serif", serif;
 }
 
 .plant-cards {
@@ -208,6 +215,7 @@ header {
 
 .llover li {
     margin-bottom: 30px;
+    list-style: disc;
 }
 
 /* plant lover responsive */
@@ -229,6 +237,95 @@ header {
     }
 }
 
+/* deal start */
+.deals-part {
+    padding: 150px 150px;
+}
+
+.deal-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h5 {
+    font-family: "Noto Serif", serif;
+}
+
+.deals {
+    display: grid;
+    grid-template-areas:
+        "deal-1 deal-2"
+        "deal-3 deal-2";
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 15px;
+}
+
+#b {
+    color: white;
+    text-decoration-color: white;
+}
+
+.deal-1 {
+    background-image: url('assets/deal-bloom.png');
+    background-repeat: no-repeat;
+    height: 201px;
+    width: 367px;
+    border-radius: 14px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    grid-area: deal-1;
+    margin-right: 0;
+}
+
+.deal-2 {
+    background-image: url('assets/deal-zabo.png');
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    grid-area: deal-2;
+
+    margin-left: 0;
+}
+
+.deal-3 {
+    background-image: url('assets/deal-ana.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 201px;
+    width: 367px;
+    border-radius: 14px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    grid-area: deal-3;
+    margin-right: 0;
+}
+
+/* deals responsive */
+@media screen and (max-width: 576px) {
+    .deals-part {
+        padding: 15px 15px;
+    }
+
+    .deal-2 {
+        height: 201px;
+        width: 367px;
+    }
+
+    .deals {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 /* start join */
 .join {
     background-image: url('assets/news-letter-bg.png');
@@ -238,62 +335,79 @@ header {
     align-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    
+
 }
-.placeh{
+
+h1 {
+    font-family: "Noto Serif", serif;
+}
+
+.placeh {
     width: 100px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 390px;
     padding-left: 10px;
+    font-family: "Inter", sans-serif;
 }
-.lh1{
+
+.lh1 {
     font-style: 50px;
 }
+
 /* join responsive */
 @media screen and (max-width: 576px) {
-.join{
-    height: 400px;
+    .join {
+        height: 400px;
 
+    }
+
+    .placeh {
+        width: 250px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 0px;
+        padding-left: 4px;
+    }
+
+    .btt {
+        padding: 13px 27px;
+    }
 }
-.placeh{
-    width: 250px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 0px;
-    padding-left: 4px;
-}
-.btt{
-     padding: 13px 27px;
-}
-}
+
 /* footer start */
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     padding: 20px 150px;
 }
-.lp{
+
+.lp {
     width: 260px;
 }
-ul li{
+
+ul li {
     list-style: none;
-     margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-a {
-  text-decoration: none;
-   color: #8987A1;
+
+#a {
+    text-decoration: none;
+    color: #8987A1;
 }
+
 .fimg img {
-  margin-right: 20px;
+    margin-right: 20px;
 }
+
 /* footer responsive */
-@media screen and (max-width: 576px){
- footer{
-flex-direction: column;   
- padding: 15px 15px;
-}   
-ul {
-  padding-left: 0; 
-}
+@media screen and (max-width: 576px) {
+    footer {
+        flex-direction: column;
+        padding: 15px 15px;
+    }
+
+    ul {
+        padding-left: 0;
+    }
 }
