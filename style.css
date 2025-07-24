@@ -28,6 +28,12 @@
 .gray {
     color: #8987A1;
 }
+.btn{
+    color: white;
+    background: #E95A08;
+    padding: 15px 70px;
+    border: none;
+}
 
 header {
     display: flex;
@@ -101,3 +107,51 @@ ul {
         font-size: 40px;
     }
 }
+.plants{
+    padding: 20px 150px;
+}
+.plant-intro{
+    text-align: center;
+}
+.sh3{
+    font-size: 50px;
+}
+.plant-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.plant-card{
+    height: 485px;
+    width: 270px;
+    text-align: center;
+}
+.plant-card img{
+    width: 100%;
+}
+.primary{
+    width: 270px;
+}
+/* plant responsive */
+@media screen and (max-width: 576px){
+    .plants{
+        padding: 0px 15px;
+    }
+   .plant-cards{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.plant-card{
+    height: 485px;
+    width: auto;
+    text-align: center;
+}
+.primary{
+    width: 230px;
+}
+.plant-cards :nth-child(7) {
+        display: none;}
+.plant-cards :nth-child(8) {
+        display: none;}
+       
+   }
