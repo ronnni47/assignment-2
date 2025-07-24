@@ -236,6 +236,8 @@ header {
     width: 100%;
     text-align: center;
     align-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
     
 }
 .placeh{
@@ -263,5 +265,35 @@ header {
 }
 .btt{
      padding: 13px 27px;
+}
+}
+/* footer start */
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+.lp{
+    width: 260px;
+}
+ul li{
+    list-style: none;
+     margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+   color: #8987A1;
+}
+.fimg img {
+  margin-right: 20px;
+}
+/* footer responsive */
+@media screen and (max-width: 576px){
+ footer{
+flex-direction: column;   
+ padding: 15px 15px;
+}   
+ul {
+  padding-left: 0; 
 }
 }
