@@ -19,6 +19,10 @@
     font-weight: bold;
     color: black;
 }
+.white-bold {
+    font-weight: bold;
+    color: white;
+}
 
 .orange-bold {
     font-weight: bold;
@@ -28,13 +32,15 @@
 .gray {
     color: #8987A1;
 }
-.btn{
+
+.btn {
     color: white;
     background: #E95A08;
     padding: 15px 70px;
     border: none;
 }
 
+/* header start */
 header {
     display: flex;
     justify-content: space-between;
@@ -42,7 +48,7 @@ header {
     padding-right: 150px;
 }
 
-ul {
+.ul {
     display: flex;
     list-style: none;
     gap: 70px;
@@ -64,7 +70,7 @@ ul {
 
 }
 
-
+/* banner start */
 .banner {
     display: flex;
     justify-content: space-between;
@@ -93,7 +99,8 @@ ul {
         padding-left: 0px;
         padding-right: 0px;
     }
-    .title-part{
+
+    .title-part {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -107,51 +114,154 @@ ul {
         font-size: 40px;
     }
 }
-.plants{
+
+/* plant start */
+.plants {
     padding: 20px 150px;
 }
-.plant-intro{
+
+.plant-intro {
     text-align: center;
 }
-.sh3{
+
+.sh3 {
     font-size: 50px;
 }
-.plant-cards{
+
+.plant-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
 
 }
-.plant-card{
+
+.plant-card {
     height: 485px;
     width: 270px;
     text-align: center;
 }
-.plant-card img{
+
+.plant-card img {
     width: 100%;
 }
-.primary{
+
+.primary {
     width: 270px;
 }
+
 /* plant responsive */
-@media screen and (max-width: 576px){
-    .plants{
+@media screen and (max-width: 576px) {
+    .plants {
         padding: 0px 15px;
     }
-   .plant-cards{
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+
+    .plant-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .plant-card {
+        height: 485px;
+        width: 220px;
+        text-align: center;
+    }
+
+    .primary {
+        width: 220px;
+    }
+
+    .plant-cards :nth-child(7) {
+        display: none;
+    }
+
+    .plant-cards :nth-child(8) {
+        display: none;
+    }
+
 }
-.plant-card{
-    height: 485px;
+
+/* plant lover start */
+.trust {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 1900px;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+.plant-lover {
+    margin-top: 80px;
+    display: flex;
+    padding: 20px 150px;
+    justify-content: center;
+    gap: 130px;
+}
+
+.Imm {
+    margin-right: 50px;
+}
+
+.immm {
     width: auto;
+}
+
+.llover li {
+    margin-bottom: 30px;
+}
+
+/* plant lover responsive */
+@media screen and (max-width: 576px) {
+    .trust {
+        display: none;
+    }
+
+    .plant-lover {
+        margin-top: 80px;
+        flex-direction: column;
+        padding: 15px 15px;
+        gap: 10px;
+    }
+
+    .immm {
+        width: 440px;
+        height: 440px;
+    }
+}
+
+/* start join */
+.join {
+    background-image: url('assets/news-letter-bg.png');
+    height: 500px;
+    width: 100%;
     text-align: center;
+    align-content: center;
+    
 }
-.primary{
-    width: 230px;
+.placeh{
+    width: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 390px;
+    padding-left: 10px;
 }
-.plant-cards :nth-child(7) {
-        display: none;}
-.plant-cards :nth-child(8) {
-        display: none;}
-       
-   }
+.lh1{
+    font-style: 50px;
+}
+/* join responsive */
+@media screen and (max-width: 576px) {
+.join{
+    height: 400px;
+
+}
+.placeh{
+    width: 250px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 0px;
+    padding-left: 4px;
+}
+.btt{
+     padding: 13px 27px;
+}
+}
